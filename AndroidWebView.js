@@ -107,7 +107,7 @@ class AndroidWebView extends Component {
     onMessage: PropTypes.func,
     onContentSizeChange: PropTypes.func,
     startInLoadingState: PropTypes.bool, // force WebView to show loadingView on first load
-    style: View.propTypes.style,
+    // style: View.propTypes.style,
     urlPrefixesForDefaultIntent: PropTypes.array,
 
     html: deprecatedPropType(
