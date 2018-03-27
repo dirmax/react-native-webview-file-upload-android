@@ -4,17 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
-import android.webkit.JsPromptResult;
-import android.webkit.JsResult;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 
-
-import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.views.webview.ReactWebViewManager;
-import com.oblongmana.webviewfileuploadandroid.AndroidWebViewModule;
 
 public class AndroidWebViewManager extends ReactWebViewManager {
 
@@ -35,14 +30,6 @@ public class AndroidWebViewManager extends ReactWebViewManager {
                 module.setUploadMessage(uploadMsg);
                 openFileChooserView();
 
-            }
-
-            public boolean onJsConfirm (WebView view, String url, String message, JsResult result){
-                return true;
-            }
-
-            public boolean onJsPrompt (WebView view, String url, String message, String defaultValue, JsPromptResult result){
-                return true;
             }
 
             // For Android < 3.0
